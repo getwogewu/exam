@@ -24,16 +24,29 @@ li{
 	}
 
 }
-.nav{
-	height: 30px;
-	background-color: #aaa;
+.main{
 	width: 960px;
 	margin: 0 auto;
+	
+}
+.nav{
+	height: 400px;
+	width: 20%;
+	background-color: #aaa;
+	font-size: 16px;
+	// width: 960px;
+	// margin: 0 auto;
+	float: left;
 	.list{
-		display: inline-block;
+		// display: inline-block;
 		line-height: 30px;
+		text-align: center;
+		background-color: #666;
 		a{
 			color: #000;
+		}
+		.list-con{
+			background-color: #eee;
 		}
 	}
 	.active{
@@ -41,20 +54,31 @@ li{
 	}
 }
 .content{
-	width: 960px;
-	margin: 0 auto;
-	font-size: 0;
-	.content-nav{
-		width: 25%;
-		height: 500px;
-		background-color: #ddd;
-		display: inline-block;
-		font-size: 12px;
+	// width: 960px;
+	// margin: 0 auto;
+	width: 80%;
+	// display: inline-block;
+	float: left;
+	background-color: #ddd;
+	height: 400px;
+	.box{
+		display: none;
+
 	}
-	.main{
-		height: 500px;
-		width: 75%;
-		background-color: #eee;
-		display: inline-block;
+	.box-active{
+		display: block;
+		font-size: 0;
+		.content-nav{
+			background: red;
+			width: 20%;
+			height: 400px;
+			display: inline-block;
+		}
+		.content-main{
+			background-color: yellow;
+			width: 80%;
+			height: 400px;
+			display: inline-block;
+		}
 	}
 }
