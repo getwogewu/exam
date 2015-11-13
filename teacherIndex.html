@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style/teacherIndex.css">
 	<link rel="stylesheet" href="font/iconfont.css">
+	<link rel="stylesheet" href="font/esc/iconfont.css">
 	<title>教师界面</title>
 </head>
 <body>
@@ -54,14 +55,14 @@
 									<th class="test-nav">操作</th>
 								</tr>
 								<tr>
-									<th class="test-info-list">C语言</th>
-									<th class="test-info-list">第一章开发环境熟悉</th>
-									<th class="test-info-list">200</th>
-									<th class="test-info-list">
+									<td class="test-info-list">C语言</td>
+									<td class="test-info-list">第一章开发环境熟悉</td>
+									<td class="test-info-list">200</th>
+									<td class="test-info-list">
 										<a class="modify" href="javascript:void(0)">修改</a>
 										<span>|</span>
 										<a class="delete" href="javascript:void(0)">删除</a>
-									</th>
+									</td>
 								</tr>
 							</table>
 						</div>
@@ -94,14 +95,14 @@
 									<th class="test-nav">操作</th>
 								</tr>
 								<tr>
-									<th class="test-info-list">C语言</th>
-									<th class="test-info-list">第一章开发环境熟悉</th>
-									<th class="test-info-list">中</th>
-									<th class="test-info-list">
+									<td class="test-info-list">C语言</td>
+									<td class="test-info-list">第一章开发环境熟悉</td>
+									<td class="test-info-list">中</td>
+									<td class="test-info-list">
 										<a class="modify" href="javascript:void(0)">修改</a>
 										<span>|</span>
-										<a class="delete" href="javascript:void(0)">删除</a>
-									</th>
+										<a class="delete" href="javascript:void(0)">d除</a>
+									</td>
 								</tr>
 							</table>
 						</div>
@@ -133,14 +134,14 @@
 									<th class="test-nav">操作</th>
 								</tr>
 								<tr>
-									<th class="test-info-list">大左</th>
-									<th class="test-info-list">2014111111</th>
-									<th class="test-info-list">03012987</th>
-									<th class="test-info-list">
+									<td class="test-info-list">大左</td>
+									<td class="test-info-list">2014111111</td>
+									<td class="test-info-list">03012987</td>
+									<td class="test-info-list">
 										<a class="modify" href="javascript:void(0)">修改</a>
 										<span>|</span>
 										<a class="delete" href="javascript:void(0)">删除</a>
-									</th>
+									</td>
 								</tr>
 							</table>
 						</div>
@@ -172,14 +173,14 @@
 									<th class="test-nav">操作</th>
 								</tr>
 								<tr>
-									<th class="test-info-list">C语言</th>
-									<th class="test-info-list">第一章开发环境熟悉</th>
-									<th class="test-info-list">200</th>
-									<th class="test-info-list">
+									<td class="test-info-list">C语言</td>
+									<td class="test-info-list">第一章开发环境熟悉</td>
+									<td class="test-info-list">200</td>
+									<td class="test-info-list">
 										<a class="modify" href="javascript:void(0)">修改</a>
 										<span>|</span>
 										<a class="delete" href="javascript:void(0)">删除</a>
-									</th>
+									</td>
 								</tr>
 							</table>
 						</div>
@@ -199,14 +200,129 @@
 		</div>
 	</div>
 	<div class="footer">
-		<div class="bank">1</div>
-		<div class="bank">
-			<div class="shadow">
-				<div class="zujuan"></div>
+		<div class="bank" >
+			<div class="shadow" >
+				<div class="exam">
+					<div class="exam-title">添加试题
+						<i class="iconfont1">&#xe600;</i>
+					</div>
+					<form action="" class="file">
+						<input type="file">
+					</form>
+					<button class="exam-sub">确定</button>
+				</div>
 			</div>
 		</div>
-		<div class="bank">3</div>
-		<div class="bank">4</div>
+		<div class="bank" >
+			<div class="shadow" >
+				<div class="zujuan">
+					<div class="zujuan-title">组卷
+						<i class="iconfont1">&#xe600;</i>
+					</div>
+					<!-- <table class="zujuan-info">
+						<tr>
+							<th class="zujuan-info-nav">考试项目名称</th>
+							<td class="zujuan-info-con"><input type="text"></td>
+						</tr>
+						<tr>
+							<th class="zujuan-info-nav">考试时长</th>
+							<td class="zujuan-info-con"><input type="text"></td>
+						</tr>
+						<tr>
+							<th class="zujuan-info-nav">总分</th>
+							<td class="zujuan-info-con"><input type="text"></td>
+						</tr>
+						<tr>
+							<th class="zujuan-info-nav">考试科目</th>
+								<td class="zujuan-info-con"><select class="sort">
+						              <option>所有科目</option>
+						              <option>C语言</option>
+						              <option>计算机基础</option>
+						              <option>excel与数据管理分析</option>
+				            	</select>
+			            	</td>
+						</tr>
+						<tr>
+							<th class="zujuan-info-nav short ">章节</th>
+							<td class="zujuan-info-con short">	<select class="sort">
+						              <option>所有科目</option>
+						              <option>C语言</option>
+						              <option>计算机基础</option>
+						              <option>excel与数据管理分析</option>
+				            	</select>
+			            	</td>
+			            	<th class="zujuan-info-nav short">所占比例</th>
+							<td class="zujuan-info-con short">	<input type="text" value="10%">
+				            	</select>
+			            	</td>
+						</tr>
+					</table> -->
+					<div class="zujuan-info">
+						<p class ="zujuan-con">
+							<span class="zujuan-info-nav">考试项目名称</span>
+							<input type="text"class="zujuan-info-con">
+						</p>
+						<p  class ="zujuan-con">
+							<span class="zujuan-info-nav">考试时长</span>
+							<input type="text"class="zujuan-info-con">
+						</p>
+						<p  class ="zujuan-con">
+							<span class="zujuan-info-nav">总分</span>
+							<input type="text"class="zujuan-info-con">
+						</p>
+						<p  class ="zujuan-con">
+							<span class="zujuan-info-nav">考试项目名称</span>
+								<span class="zujuan-info-con "><select >
+						              <option>C语言</option>
+						              <option>计算机基础</option>
+						              <option>excel与数据管理分析</option>
+				            	</select>
+			            	</span>
+						</p>
+						<p  class ="zujuan-con">
+							<sapn class="short">章节</span>
+							<span class="short">		<select>
+						              <option>所有章节</option>
+						              <option>第一章</option>
+						              <option>第二章</option>
+						              <option>第三章<option>
+				            	</select>
+			            	</span>
+			            	<span class="short ">所占比例</span>
+							<input type="text" value="10%" class=" short">
+							<a href="javascript:void(0)" class="zujuan-info-add short">增加章节</a>
+						</p>
+						<p  class ="zujuan-con">
+							<sapn class="short">题型</span>
+							<span class="short">		<select>
+						              <option>单选题</option>
+						              <option>多选题</option>
+						              <option>简答题</option>
+						              <option>论述题<option>
+				            	</select>
+			            	</span>
+			            	<span class="short ">所占比例</span>
+							<input type="text" value="10%" class=" short">
+							<a href="javascript:void(0)" class="zujuan-info-add short">增加题型</a>
+						</p>
+						<p  class ="zujuan-con">
+							<sapn class="short">题型</span>
+							<span class="short">		<select>
+						              <option>单选题</option>
+						              <option>多选题</option>
+						              <option>简答题</option>
+						              <option>论述题<option>
+				            	</select>
+			            	</span>
+			            	<span class="short ">所占比例</span>
+							<input type="text" value="10%" class=" short">
+							<a href="javascript:void(0)" class="zujuan-info-add short">增加题型</a>
+						</p>
+					</div>
+					<button class="zujuan-sub">确定</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 <script src ="js/qiehuan.js"></script>
