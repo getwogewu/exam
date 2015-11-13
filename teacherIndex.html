@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style/teacherIndex.css">
+	<link rel="stylesheet" href="font/iconfont.css">
 	<title>教师界面</title>
 </head>
 <body>
@@ -11,72 +12,203 @@
 	</div>
 	<div class="main">
 		<div class="nav">
-		<ul>
-			<li class="list"><a href="javascript:void(0)">系统首页</a></li>
-			<li class="list">
-				<a href="javascript:void(0)">题库管理</a>
-			</li>
-			<li class="list">
-				<a href="javascript:void(0)">试卷管理</a>
-			</li>
-			<li class="list"><a href="javascript:void(0)">系统设置</a></li>
-		</ul>
-	</div>
-	<div class="content">
-		<div class="box">1
+			<div class="admin-info">
+				<p class="welcome">欢迎您:</p>
+				<p class="admin">张老师</p>
+			</div>
+			<ul>
+				<li class="list"><a href="javascript:void(0)">系统首页</a></li>
+				<li class="list">
+					<a href="javascript:void(0)">我的题库</a>
+				</li>
+				<li class="list">
+					<a href="javascript:void(0)">试卷管理</a>
+				</li>
+				<li class="list">
+					<a href="javascript:void(0)">考生管理</a>
+				</li>
+				<li class="list">
+					<a href="javascript:void(0)">资源库</a>
+				</li>
+				<li class="list"><a href="javascript:void(0)">系统设置</a></li>
+			</ul>
 		</div>
-		<div class="box">
-			<div class="Q-bank">
-				<ul class="Q-list">
-					<li class="Q-button">
-						<form>
-							<span>分类:</span>
-						<select class="sort">
-						<option>题型</option>
-						<option>知识点</option>
-						
-						</select>
-						</form>
-					</li>
-					<li class="Q-button">
-						<button class="Q">新建题库</button>
-					</li>
-					<li class="Q-button">
-						<button class="Q">导入题库</button>
-					</li>
-					<li class="Q-button">
-						<button class="Q">导出题库</button>
-					</li>
-				</ul>
-				<table class="bank-con">
-					<tr>
-						<th class="Q-bank-nav">名称</th>
-						<th class="Q-bank-nav">题型</th>
-						<th class="Q-bank-nav">数量</th>
-						<th class="Q-bank-nav">操作</th>
-					</tr>
-					<tr>
-						<td class="Q-bank-info">第一章 一二三失误了</td>
-						<td class="Q-bank-info">简答题</td>
-						<td class="Q-bank-info">9890</td>
-						<td class="Q-bank-info">
-							<button class="modify">修改</button>
-							<button class="delete">删除</button>
-						</td>
-					</tr>
-				</table>
+		<div class="content">
+			<div class="box">1
+			</div>
+			<div class="box">
+				<div class="myQ-bank">
+					<h2 class="myQ-title">我的题库</h2>
+					<div class="myQ-info">
+						<div class="myQ-nav">
+							<p class="myQ-nav-list"><i class="iconfont">&#xe7bb;</i></p>
+							<p class="myQ-nav-title">试题列表</p>
+							<p class="myQ-more">添加试题</p>
+						</div>
+						<div class="test-list">
+							<table class="test-info">
+								<tr>
+									<th class="test-nav">科目</th>
+									<th class="test-nav">章节</th>
+									<th class="test-nav">数量</th>
+									<th class="test-nav">操作</th>
+								</tr>
+								<tr>
+									<th class="test-info-list">C语言</th>
+									<th class="test-info-list">第一章开发环境熟悉</th>
+									<th class="test-info-list">200</th>
+									<th class="test-info-list">
+										<a class="modify" href="javascript:void(0)">修改</a>
+										<span>|</span>
+										<a class="delete" href="javascript:void(0)">删除</a>
+									</th>
+								</tr>
+							</table>
+						</div>
+						<div class="page">
+							<a class="pages">上一页</a>
+							<span class="pages">1</span>
+							<a class="pages">下一页</a>
+							<input type="text" class="pages">
+							<button class="pages button">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="myQ-bank">
+					<h2 class="myQ-title">试卷管理</h2>
+					<div class="myQ-info">
+						<div class="myQ-nav">
+							<p class="myQ-nav-list"><i class="iconfont">&#xe7bb;</i></p>
+							<p class="myQ-nav-title">试卷列表</p>
+							<p class="myQ-more">组卷</p>
+						</div>
+						<div class="test-list">
+							<table class="test-info">
+								<tr>
+									<th class="test-nav">科目</th>
+									<th class="test-nav">章节</th>
+									<th class="test-nav">难度
+									</th>
+									<th class="test-nav">操作</th>
+								</tr>
+								<tr>
+									<th class="test-info-list">C语言</th>
+									<th class="test-info-list">第一章开发环境熟悉</th>
+									<th class="test-info-list">中</th>
+									<th class="test-info-list">
+										<a class="modify" href="javascript:void(0)">修改</a>
+										<span>|</span>
+										<a class="delete" href="javascript:void(0)">删除</a>
+									</th>
+								</tr>
+							</table>
+						</div>
+						<div class="page">
+							<a class="pages">上一页</a>
+							<span class="pages">1</span>
+							<a class="pages">下一页</a>
+							<input type="text" class="pages">
+							<button class="pages button">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="myQ-bank">
+					<h2 class="myQ-title">考生管理</h2>
+					<div class="myQ-info">
+						<div class="myQ-nav">
+							<p class="myQ-nav-list"><i class="iconfont">&#xe7bb;</i></p>
+							<p class="myQ-nav-title">考生名单</p>
+							<p class="myQ-more">添加考生</p>
+						</div>
+						<div class="test-list">
+							<table class="test-info">
+								<tr>
+									<th class="test-nav">姓名</th>
+									<th class="test-nav">班级</th>
+									<th class="test-nav">学号</th>
+									<th class="test-nav">操作</th>
+								</tr>
+								<tr>
+									<th class="test-info-list">大左</th>
+									<th class="test-info-list">2014111111</th>
+									<th class="test-info-list">03012987</th>
+									<th class="test-info-list">
+										<a class="modify" href="javascript:void(0)">修改</a>
+										<span>|</span>
+										<a class="delete" href="javascript:void(0)">删除</a>
+									</th>
+								</tr>
+							</table>
+						</div>
+						<div class="page">
+							<a class="pages">上一页</a>
+							<span class="pages">1</span>
+							<a class="pages">下一页</a>
+							<input type="text" class="pages">
+							<button class="pages button">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="myQ-bank">
+					<h2 class="myQ-title">所有题库</h2>
+					<div class="myQ-info">
+						<div class="myQ-nav">
+							<p class="myQ-nav-list"><i class="iconfont">&#xe7bb;</i></p>
+							<p class="myQ-nav-title">试题列表</p>
+							<p class="myQ-more">添加试题</p>
+						</div>
+						<div class="test-list">
+							<table class="test-info">
+								<tr>
+									<th class="test-nav">科目</th>
+									<th class="test-nav">章节</th>
+									<th class="test-nav">数量</th>
+									<th class="test-nav">操作</th>
+								</tr>
+								<tr>
+									<th class="test-info-list">C语言</th>
+									<th class="test-info-list">第一章开发环境熟悉</th>
+									<th class="test-info-list">200</th>
+									<th class="test-info-list">
+										<a class="modify" href="javascript:void(0)">修改</a>
+										<span>|</span>
+										<a class="delete" href="javascript:void(0)">删除</a>
+									</th>
+								</tr>
+							</table>
+						</div>
+						<div class="page">
+							<a class="pages">上一页</a>
+							<span class="pages">1</span>
+							<a class="pages">下一页</a>
+							<input type="text" class="pages">
+							<button class="pages button">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				
 			</div>
 		</div>
-		<div class="box">
-			<div class="content-nav">3</div>
-			<div class="content-main"></div>
-		</div>
-		<div class="box">4
-		</div>
 	</div>
+	<div class="footer">
+		<div class="bank">1</div>
+		<div class="bank">
+			<div class="shadow">
+				<div class="zujuan"></div>
+			</div>
+		</div>
+		<div class="bank">3</div>
+		<div class="bank">4</div>
 	</div>
-	
-	<div class="footer"></div>
 </body>
 <script src ="js/qiehuan.js"></script>
+<script src ="js/zujuan.js"></script>
 </html>
